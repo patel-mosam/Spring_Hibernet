@@ -12,6 +12,11 @@ public class UserEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@GeneratedValue(strategy = GenerationType.TABLE)
+//	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	
+//	@GeneratedValue(strategy = GenerationType.UUID)
 	Integer userId;
 	String firstName;
 	String lastName;
