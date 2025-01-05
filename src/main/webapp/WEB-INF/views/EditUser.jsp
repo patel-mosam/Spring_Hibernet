@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Add New Users</title>
+<title>Edit Users</title>
 
 <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,32 +39,31 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header bg-primary text-white text-center">
-                    <h2>Add New Users</h2>
+                   <h2>Edit Users</h2>
                 </div>
                 <div class="card-body">
-                
-                    <form action="saveuser" method="post">
+                    <form action="updateuser" method="post">
                     
                     <input type="hidden" value="${user.userId}" name="userId" />
                     
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            <input type="text" class="form-control" id="firstName" value="${user.firstName}" name="firstName" required>
                         </div>
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            <input type="text" class="form-control" id="lastName" value="${user.lastName}" name="lastName" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control" id="email" value="${user.email}" name="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+                            <input type="password" class="form-control" id="password" value="${user.password}" name="password" required>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-success btn-lg">Add User</button>
+                            <button type="submit" class="btn btn-success btn-lg">Update User</button>
 						</div>
                     </form>
                 </div>

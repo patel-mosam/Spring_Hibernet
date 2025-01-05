@@ -31,7 +31,8 @@
 				<td>${u.firstName}</td>
 				<td>${u.lastName}</td>
 				<td>
-					<button class="btn btn-warning btn-sm">Edit</button>
+					<a href="edituser?userId=${u.userId}" class="btn btn-primary">Edit</a>
+
 					<a href="deleteuser?id=${u.userId}" class="btn btn-danger btn-sm">Delete</a>
 				</td>
 			</tr>

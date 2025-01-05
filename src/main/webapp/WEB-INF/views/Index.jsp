@@ -32,6 +32,7 @@
     <h1 class="mb-4">Index Page</h1>
     <a href="listuser" class="btn btn-primary btn-custom">List Users</a>
     <a href="newuser" class="btn btn-success btn-custom">Add Users</a>
+     <a href="searchuser" class="btn btn-success btn-custom">Search Users</a>
 </div>
 
 <!-- Bootstrap JS Bundle -->
